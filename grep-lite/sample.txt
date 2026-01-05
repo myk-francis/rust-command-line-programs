@@ -1,0 +1,4 @@
+Rust is fast
+Rust is safe
+Python is easy
+I love systems programming
