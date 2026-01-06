@@ -19,3 +19,12 @@ fn prints_message_without_newline() {
 
     assert_eq!(String::from_utf8_lossy(&output.stdout), "hello world");
 }
+
+#[test]
+fn fail_when_no_message_provided() {
+    let output = Command::new(env!("CARGO_BIN_EXE_echor"))
+        .output()
+        .expect("failed to execute");
+
+    assert!(!output.status.success());
+}
