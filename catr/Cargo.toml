@@ -2,9 +2,10 @@
 name = "catr"
 version = "0.1.0"
 edition = "2024"
+about = "Copy of cat but with rust"
 
 [dependencies]
-clap = "4.5.54"
+clap = { version = "4.5.54", features = ["derive"] }
 
 [dev-dependencies]
 assert_cmd = "2.0"
