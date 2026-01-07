@@ -11,16 +11,16 @@ pub struct Config {
     files: Vec<String>,
 
     /// Number lines
-    #[arg(short = 'l', long = "lines")]
+    #[arg(short = 'l', long = "lines", help = "Number lines")]
     lines: bool,
 
-    #[arg(short = 'w', long = "words")]
+    #[arg(short = 'w', long = "words", help = "Number words")]
     words: bool,
 
-    #[arg(short = 'c', long = "bytes")]
+    #[arg(short = 'c', long = "bytes", help = "Number bytes")]
     bytes: bool,
 
-    #[arg(short = 'm', long = "chars")]
+    #[arg(short = 'm', long = "chars", help = "Number characters")]
     chars: bool,
 }
 
